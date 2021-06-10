@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-input-view",
+      "appliesTo": "src/mvc/view/input-view.js",
+      "type": "launch"
+    }
+  ]
+}
