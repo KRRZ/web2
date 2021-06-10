@@ -5,7 +5,8 @@ class Controller
         AppView.NavigationEvents([
             this.NewOrder,
             this.OrderList,
-            this.Summary
+            this.Summary,
+            this.Login
         ]);
     }
     static OrderList()
@@ -45,5 +46,11 @@ class Controller
             info.update(list.length, FinanceModel.GetCredit());
             Controller.Summary();
         });
+    }
+    static Login()
+    {
+        AppView.ClearTarget();
+        var login = new Login(AppView.app);
+       
     }
 }
